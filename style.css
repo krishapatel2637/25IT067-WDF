@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background: #f4f4f4;
+}
+header{
+    background: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav{
+    background: #333;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: block;
+}
+nav ul li a:hover{
+    background: #0077cc;
+}
+main{
+    width: 90%;
+    margin: 20px auto;
+}
+section,.card,.box,.notice-card,.profile-card{
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.cards,.summary,.resources{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.card,.box{
+    flex: 1;
+    text-align: center;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+table,th,td{
+    border: 1px solid #ccc;
+}
+th,td{
+    padding: 10px;
+    text-align: center;
+}
+th{
+    background: #0077cc;
+    color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input,select,textarea,button{
+    padding: 10px;
+    margin: 8px 0;
+}
+button{
+    background: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background: #005fa3;
+}
+.gender{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+aside{
+    background: #fff3cd;
+    padding: 15px;
+    margin-top: 20px;
+}
+footer{
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+@media(max-width:768px) {
+    .cards,
+    .summary,
+    .resources,
+    nav ul{
+        flex-direction: column;
+    }
+}
